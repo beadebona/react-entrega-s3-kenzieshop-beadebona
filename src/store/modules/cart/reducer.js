@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const cartReducer = (state = JSON.parse(localStorage.getItem('cart')) || [], action) => {
     switch (action.type) {
         case ADD_CART:
-            toast.success("PRODUTO ADICIONADO AO CARRINHO!", {toastId: 1})
+            toast.success("PRODUTO ADICIONADO AO CARRINHO!")
             return action.list
 
         case REMOVE_CART:
